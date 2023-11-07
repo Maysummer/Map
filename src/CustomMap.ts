@@ -1,5 +1,10 @@
-import { Company } from "./Company";
-import { User } from "./User";
+//How every argument must be, to be an argument for addMarker
+interface MapInstance {
+  location: {
+    lat: number;
+    lng: number;
+  }
+}
 
 //This is created as a replica of google maps but also to ensure the availability of ONLY specific properties we specify
 export class CustomMap {
@@ -15,22 +20,12 @@ export class CustomMap {
     });
   }
 
-  addUserMarker(user: User): void {
+  addMarker(mapInstance: MapInstance): void {
     new google.maps.Marker({
       map: this.googleMap,
       position: {
-        lat: user.location.lat,
-        lng: user.location.lng
-      }
-    })
-  }
-
-  addCompanyMarker(company: Company) {
-    new google.maps.Marker({
-      map: this.googleMap,
-      position: {
-        lat: company.location.lat,
-        lng: company.location.lng
+        lat: mapInstance.location.lat,
+        lng: mapInstance.location.lng
       }
     })
   }
