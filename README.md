@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Maysummer/FAQ-accordion-card)
+- Solution URL: [Solution](https://github.com/Maysummer/Map)
 - Live Site URL: [Live site](https://maysummer.github.io/FAQ-accordion-card/)
 
 ## My process
