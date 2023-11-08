@@ -1,10 +1,11 @@
 //How every argument must be, to be an argument for addMarker
-interface MapInstance {
+export interface MapInstance {
   location: {
     lat: number;
     lng: number;
   };
   markerContent(): string;
+  color: string;
 }
 
 //This is created as a replica of google maps but also to ensure the availability of ONLY specific properties we specify

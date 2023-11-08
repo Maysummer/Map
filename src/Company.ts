@@ -1,12 +1,14 @@
 import { faker } from "@faker-js/faker";
+import { MapInstance } from "./CustomMap";
 
-export class Company {
+export class Company implements MapInstance{
   companyName: string;
   catchPhrase: string;
   location: {
     lat: number;
     lng: number;
   };
+  color: string = 'blue';
 
   constructor() {
     this.companyName= faker.company.name();

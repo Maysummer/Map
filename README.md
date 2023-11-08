@@ -32,10 +32,16 @@ Users should be able to:
 
 ## My process
 
-Understood the basic syntax of typescript and when to use them.
-Understood different types andtheir annotations.
-Understood interfaces and building functionalites with classes.
-Explored design patterns with typescript.
+- Understood the basic syntax of typescript and when to use them.
+- Understood different types and their annotations.
+- Understood interfaces and building functionalites with classes.
+- Generated random data using Faker (User and Company).
+- Restricted the amount of API(google map) surface area exposed by creating an instance and making it private.
+- Integrated google maps.
+- Interpreting type definition files.
+- Added marker.
+- Refactored code to avoid duplicate.
+- Made marker content dynamic.
 
 ### Built with
 
@@ -44,4 +50,18 @@ Explored design patterns with typescript.
 - Faker
 - Google maps API key
 - React
-- Express
+
+### What I learned
+
+Creating a type alias, rather than defining same type multiple times
+
+```ts
+type Drink: [string, boolean, number];
+const coke: Drink =['brown', true, 20];
+```
+
+Ensure a value satifies all properties of an interface
+
+```ts
+export class User implements Mappable
+```
