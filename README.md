@@ -39,9 +39,9 @@ Explored design patterns with typescript.
 
 ### Built with
 
+- Typescript
 - Parcel
 - Faker
 - Google maps API key
-- Typescript
 - React
 - Express

@@ -3,7 +3,8 @@ interface MapInstance {
   location: {
     lat: number;
     lng: number;
-  }
+  };
+  markerContent(): string;
 }
 
 //This is created as a replica of google maps but also to ensure the availability of ONLY specific properties we specify
@@ -31,7 +32,7 @@ export class CustomMap {
 
     marker.addListener('click', ()=> {
       const infoWindow = new google.maps.InfoWindow({
-        content: 'Hello!'
+        content: mapInstance.markerContent()
       });
 
       infoWindow.open(this.googleMap, marker)
