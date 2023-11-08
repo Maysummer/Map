@@ -5,7 +5,6 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Available Script](#available-scripts)
@@ -25,11 +24,6 @@ Users should be able to:
 ### Screenshot
 
 ![Screen](./Screenshot.png)
-
-### Links
-
-- Solution URL: [Solution](https://github.com/Maysummer/Map)
-- Live Site URL: [Live site](https://maysummer.github.io/FAQ-accordion-card/)
 
 ## My process
 
